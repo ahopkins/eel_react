@@ -6,10 +6,11 @@ from time import sleep
 def add(a, b):
     x = a + b
     print('Adding {} to {}, gets {}'.format(a, b, x))
-    try:
-        eel.hello('From Python')
-    except AttributeError:
-        print('Function Not Found')
+    print(eel._js_functions)
+    eel.hello('F.rom Python')
+    # try:
+    # except AttributeError:
+    #     print('Function Not Found')
 
 
 def start_eel(should_sleep=True, develop=True):
@@ -29,5 +30,5 @@ def start_eel(should_sleep=True, develop=True):
 
 
 if __name__ == '__main__':
-    eel.init('web')
+    eel.init('client')
     start_eel(should_sleep=True, develop=True)

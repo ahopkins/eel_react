@@ -1,5 +1,5 @@
 {
-  "extends": ["tslint-react"],
+  // "extends": ["tslint-react"],
   "rules": {
     "align": [
       true,
@@ -34,17 +34,10 @@
     "no-any": false,
     "no-arg": true,
     "no-bitwise": false,
-    "no-console": [
-      true,
-      "log",
-      "info",
-      "time",
-      "timeEnd",
-      "trace"
-    ],
+    "no-console": false,
     "no-consecutive-blank-lines": true,
     "no-construct": true,
-    "no-debugger": true,
+    "no-debugger": false,
     "no-duplicate-variable": true,
     "no-empty": false,
     "no-eval": true,
