@@ -2,6 +2,16 @@ import eel
 from time import sleep
 
 
+@eel.expose
+def add(a, b):
+    x = a + b
+    print('Adding {} to {}, gets {}'.format(a, b, x))
+    try:
+        eel.hello('From Python')
+    except AttributeError:
+        print('Function Not Found')
+
+
 def start_eel(should_sleep=True, develop=True):
     if should_sleep:
         sleep(4)

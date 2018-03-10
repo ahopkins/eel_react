@@ -1,0 +1,1 @@
+export const eel: any = window['eel'];
