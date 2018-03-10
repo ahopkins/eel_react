@@ -1,10 +1,5 @@
 import eel
-from subprocess import call
 from time import sleep
-
-
-def start_web():
-    call(['./start.sh'])
 
 
 def start_eel(should_sleep=True, develop=True):
